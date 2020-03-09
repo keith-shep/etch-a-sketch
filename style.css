@@ -1,0 +1,16 @@
+/* div {
+    background-color: hotpink;
+} */
+
+.container {
+    background-color: #dddddd;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.container > div {
+    padding: 1em;
+    
+}
