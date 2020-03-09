@@ -1,2 +1,2 @@
-This will recreate a etch a sketch program
+This will create a etch a sketch program
 
