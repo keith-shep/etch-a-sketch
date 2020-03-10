@@ -1,16 +1,18 @@
-/* div {
-    background-color: hotpink;
-} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-.container {
-    background-color: #dddddd;
+.row {
+
+
     display: flex;
-    flex-wrap: wrap;
 
 }
 
-
-.container > div {
+.square {
+    background-color: #eeeeee;
+    margin: 1px;
     padding: 1em;
-    
 }
