@@ -15,3 +15,8 @@ for (let i = 0; i < 16; i++) {
     }
 }
 
+
+const squares = document.querySelectorAll('.square');
+squares.forEach(element =>
+    element.addEventListener('mouseover', () => element.style.backgroundColor="red")
+);
