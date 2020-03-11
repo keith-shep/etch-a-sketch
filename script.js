@@ -1,6 +1,10 @@
+const body = document.querySelector('body');
 const container = document.querySelector('.container');
+const button = document.createElement('button');
+button.textContent = 'reset'
+body.insertBefore(button, container)
 
-
+// Create grid
 for (let i = 0; i < 16; i++) {
     const row = document.createElement('div');
     row.classList.add('row');
@@ -15,8 +19,15 @@ for (let i = 0; i < 16; i++) {
     }
 }
 
-
 const squares = document.querySelectorAll('.square');
+
+
 squares.forEach(element =>
-    element.addEventListener('mouseover', () => element.style.backgroundColor="red")
+    element.addEventListener('mouseover', () => element.style.backgroundColor = "black")
 );
+button.addEventListener('click', resetColor);
+
+
+function resetColor() {
+    squares.forEach(element => element.style.backgroundColor = 'gray');
+}
